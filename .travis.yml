@@ -8,7 +8,7 @@ before_script:
 script:
   - cmake ../381706-1KoltLaby
   - make -j
-  - cd ./bin/
-  - ./381706-1KoltLaby
+ # - cd ./bin/
+  - ./Vector
 notifications:
   email: false
