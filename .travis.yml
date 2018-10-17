@@ -9,6 +9,6 @@ script:
   - cmake ../381706-1KoltLaby
   - make -j
  # - cd ./bin/
-  - ./Vector
+  - ./Vector/Vector
 notifications:
   email: false
