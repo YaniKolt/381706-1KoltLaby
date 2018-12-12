@@ -41,9 +41,9 @@ int main()
     exp.Print();
   }
 
-  cout << "\n\nUsing input / output streams:\n";
-  TMatrix <int> MT(3);
-  cin >> MT;
-  cout << "\nMatrix entered by youself:" << endl << MT;
+  //cout << "\n\nUsing input / output streams:\n";
+  //TMatrix <int> MT(3);
+  //cin >> MT;
+  //cout << "\nMatrix entered by youself:" << endl << MT;
   return 0;
 }
