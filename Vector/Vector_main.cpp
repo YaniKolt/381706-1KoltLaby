@@ -43,9 +43,9 @@ int main()
     exp.Print();
   }
 
-  cout << "\n\nUsing input / output streams:\n";
-  TVector <int> V(4);
-  cin >> V;
-  cout << "\nVector entered by you: " << V << endl;
+ // cout << "\n\nUsing input / output streams:\n";
+  //TVector <int> V(4);
+  //cin >> V;
+  //cout << "\nVector entered by you: " << V << endl;
   return 0;
 }
