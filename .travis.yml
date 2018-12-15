@@ -11,6 +11,7 @@ script:
  # - cd ./bin/
   - ./Vector/Vector
   - ./VectorTest/VectorTest
- 
+  - ./Matrix/Matrix
+  - ./MatrixTest/MatrixTest
 notifications:
   email: false
