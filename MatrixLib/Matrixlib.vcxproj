@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2C85B1DB-8EBF-3C64-9D67-D411C65A0163}</ProjectGuid>
+    <ProjectGuid>{3CA77AF9-0689-3513-8AB7-145B31972755}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
@@ -38,18 +38,18 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Matrixlib.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Matrixlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Matrixlib.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Matrixlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -66,10 +66,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -82,7 +82,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -99,10 +99,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,10 +114,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby/MatrixLib/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/MatrixLib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-D:\CMake\bin\cmake.exe "-HC:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby" "-BC:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby" --check-stamp-file "C:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby/MatrixLib/CMakeFiles/generate.stamp"
+D:\CMake\bin\cmake.exe "-HC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" "-BC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" --check-stamp-file "C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/MatrixLib/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -125,12 +125,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby/MatrixLib/CMakeLists.txt;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\CMakeLists.txt;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/MatrixLib/CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby/MatrixLib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/MatrixLib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-D:\CMake\bin\cmake.exe "-HC:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby" "-BC:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby" --check-stamp-file "C:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby/MatrixLib/CMakeFiles/generate.stamp"
+D:\CMake\bin\cmake.exe "-HC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" "-BC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" --check-stamp-file "C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/MatrixLib/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -138,18 +138,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Яна/Desktop/Лаба2. Векторы/My/381706-1KoltLaby/MatrixLib/CMakeLists.txt;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\CMakeLists.txt;C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/MatrixLib/CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\Matrix.cpp" />
-    <ClInclude Include="C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\MatrixLib\Matrix.h" />
+    <ClCompile Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\Matrix.cpp" />
+    <ClInclude Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib\Matrix.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Яна\Desktop\Лаба2. Векторы\My\381706-1KoltLaby\ZERO_CHECK.vcxproj">
-      <Project>{135E9C08-47CA-34F5-B59E-19B286047B64}</Project>
+    <ProjectReference Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ZERO_CHECK.vcxproj">
+      <Project>{1935E591-0F1C-3026-8AB3-8227FF5F98F4}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

@@ -144,7 +144,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib\Stack.cpp" />
     <ClInclude Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib\Stack.h" />
   </ItemGroup>
   <ItemGroup>
