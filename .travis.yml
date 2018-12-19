@@ -9,9 +9,9 @@ script:
   - cmake ../381706-1KoltLaby
   - make -j
  # - cd ./bin/
-  - ./VectorTest/VectorTest
-  - ./MatrixTest/MatrixTest
-  - ./StackTest/StackTest
-  - ./QueueTest/QueueTest
+  - ./VectorTest/TestVector
+  - ./MatrixTest/TestMatrix
+  - ./StackTest/TestStack
+  - ./QueueTest/TestQueue
 notifications:
   email: false
