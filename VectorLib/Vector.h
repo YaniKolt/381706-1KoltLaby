@@ -206,7 +206,7 @@ template <class T>
 ostream& operator<<(ostream &out, const TVector<T> &A)
 {
 	for (int i = 0; i < A.leng; i++)
-		out << A.vector[i] << ' ';
+		out << A.vector[i] << '\t';
 	return out;
 }
 
