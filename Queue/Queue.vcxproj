@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CBE93DFC-E136-3ACD-B0CE-F679DAB83928}</ProjectGuid>
+    <ProjectGuid>{13813380-3F5B-3E99-94A7-0A27F9F9DFC0}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
@@ -38,13 +38,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Queue.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Queue</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Queue.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Queue</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
@@ -53,7 +53,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\чек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -70,10 +70,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\чек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\чек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -86,8 +86,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/Debug/Queue.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/Debug/Queue.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/Debug/Queue.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/Debug/Queue.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -96,7 +96,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\чек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -113,10 +113,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\чек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Яна\Desktop\чек\381706-1KoltLaby\gtest;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\ExceptionLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\VectorLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\MatrixLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\StackLib;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -129,8 +129,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/Release/Queue.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/Release/Queue.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/Release/Queue.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/Release/Queue.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -138,10 +138,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-D:\CMake\bin\cmake.exe "-HC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" "-BC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" --check-stamp-file "C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/CMakeFiles/generate.stamp"
+D:\CMake\bin\cmake.exe -HC:/Users/Яна/Desktop/чек/381706-1KoltLaby -BC:/Users/Яна/Desktop/чек/381706-1KoltLaby --check-stamp-file C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -149,12 +149,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/CMakeLists.txt;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\CMakeLists.txt;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-D:\CMake\bin\cmake.exe "-HC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" "-BC:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby" --check-stamp-file "C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/CMakeFiles/generate.stamp"
+D:\CMake\bin\cmake.exe -HC:/Users/Яна/Desktop/чек/381706-1KoltLaby -BC:/Users/Яна/Desktop/чек/381706-1KoltLaby --check-stamp-file C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -162,21 +162,21 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/Queue/CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\CMakeLists.txt;C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/CMakeLists.txt;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\CMakeLists.txt;C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\Queue\main.cpp" />
+    <ClCompile Include="C:\Users\Яна\Desktop\чек\381706-1KoltLaby\Queue\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\ZERO_CHECK.vcxproj">
-      <Project>{1935E591-0F1C-3026-8AB3-8227FF5F98F4}</Project>
+    <ProjectReference Include="C:\Users\Яна\Desktop\чек\381706-1KoltLaby\ZERO_CHECK.vcxproj">
+      <Project>{A6ACE5CD-34FC-3794-8CED-F299B205DAA9}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib\QueueLib.vcxproj">
-      <Project>{3E0D5D8B-A46B-3167-BD7A-4FBBB9F27B62}</Project>
+    <ProjectReference Include="C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib\QueueLib.vcxproj">
+      <Project>{D764B75A-53FB-3B95-82D5-122CCF50BEB5}</Project>
       <Name>QueueLib</Name>
     </ProjectReference>
   </ItemGroup>

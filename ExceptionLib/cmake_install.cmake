@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/ExceptionLib
+# Install script for directory: C:/Users/Яна/Desktop/чек/381706-1KoltLaby/ExceptionLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

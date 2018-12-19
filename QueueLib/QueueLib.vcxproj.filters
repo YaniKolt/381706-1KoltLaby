@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib\Queue.cpp">
+    <ClCompile Include="C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib\Queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib\Queue.h">
+    <ClInclude Include="C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib\Queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Яна\Desktop\Лаба3. Стек\381706-1KoltLaby\QueueLib\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Яна\Desktop\чек\381706-1KoltLaby\QueueLib\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{173ED87E-2B1E-3FF6-9D7E-F898707B9813}</UniqueIdentifier>
+      <UniqueIdentifier>{3245C245-615B-3E22-81DE-BF84EED79B70}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{82B5A62F-53AE-366E-9DC8-91D1608DA946}</UniqueIdentifier>
+      <UniqueIdentifier>{4A91DEE1-B7A0-3816-B90E-26457EA71A64}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

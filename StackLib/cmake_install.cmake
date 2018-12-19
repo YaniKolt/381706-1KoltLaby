@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Яна/Desktop/Лаба3. Стек/381706-1KoltLaby/StackLib
+# Install script for directory: C:/Users/Яна/Desktop/чек/381706-1KoltLaby/StackLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
