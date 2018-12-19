@@ -19,6 +19,7 @@ public:
 	TMatrix operator+(const TMatrix &Mt);         // сложение
 	TMatrix operator-(const TMatrix &Mt);         // вычитание
 	TMatrix<T> operator*(const TMatrix<T> &Mt);    // умножение
+	TMatrix<T> operator/(const TMatrix<T> &MT); //деление
 	//ввод-вывод
 	template <class ValType2>
 	friend istream& operator>>(istream &in, TMatrix<ValType2> &Mt);
@@ -98,6 +99,33 @@ TMatrix<T> TMatrix<T>::operator*(const TMatrix<T> &Mt)
 	return rez;
 }
 
+template <class T>
+TMatrix<T> TMatrix<T>::operator/(const TMatrix<T> &Matr)
+{
+	if (this->leng != Matr.leng)
+		throw MyException("Error length operand");
+	TMatrix <T> copy(*this);
+	TMatrix <T> rez(this->leng);
+	TMatrix <T> copyMt(Matr);
+
+	for (int i = 0; i < this->leng; i++)
+		rez[i][0] = 1 / copyMt[i][0];
+
+	for (int i = 0; i < this->leng - 1; i++)
+		for (int j = 1; j < this->leng - i; j++)
+		{
+			if (copyMt[i][j] != 0)
+			{
+				T temp = copyMt[i][j];
+				rez[i][j] = (-1) * copyMt[i][j] * rez[i + j][0];
+				for (int k = j, l = 0; k < this->leng - i; k++)
+					copyMt[i][k] = copyMt[i][k] - copyMt[j][l++] * temp;
+			}
+		}
+	rez = copy * rez;
+	return rez;
+}
+
 template <class ValType2>
 istream& operator>>(istream &in, TMatrix<ValType2> &Mt)
 {
@@ -110,6 +138,10 @@ template <class ValType2>
 ostream & operator<<(ostream &out, const TMatrix<ValType2> &Mt)
 {
 	for (int i = 0; i < Mt.leng; i++)
-		out << Mt.vector[i] << endl;
+	{
+		for (int k = 0; k < i; k++)
+			out << "  \t";
+		out << setprecision(5) << Mt.vector[i] << endl;
+	}
 	return out;
 }
