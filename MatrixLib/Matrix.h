@@ -1,26 +1,27 @@
 #pragma once
 #include "Vector.h"
+#include <iomanip> 
 
 template <class T>
 class TMatrix : public TVector<TVector<T> >
 {
 public:
-	//конструкторы
+	//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г»
 	TMatrix(int l = 10);
 	TMatrix(const TMatrix &Mt);
 	TMatrix(const TVector<TVector<T> > &Mt);
 	virtual ~TMatrix();
-	//булевые
-	bool operator==(const TMatrix &Mt) const;      // булевый оператор равно
-	bool operator!=(const TMatrix &Mt) const;      // булевый оператор не равно
+	//ГЎГіГ«ГҐГўГ»ГҐ
+	bool operator==(const TMatrix &Mt) const;      // ГЎГіГ«ГҐГўГ»Г© Г®ГЇГҐГ°Г ГІГ®Г° Г°Г ГўГ­Г®
+	bool operator!=(const TMatrix &Mt) const;      // ГЎГіГ«ГҐГўГ»Г© Г®ГЇГҐГ°Г ГІГ®Г° Г­ГҐ Г°Г ГўГ­Г®
 
-	TMatrix& operator=(const TMatrix &Mt);        // присваивание
-	//арифметические операции
-	TMatrix operator+(const TMatrix &Mt);         // сложение
-	TMatrix operator-(const TMatrix &Mt);         // вычитание
-	TMatrix<T> operator*(const TMatrix<T> &Mt);    // умножение
-	TMatrix<T> operator/(const TMatrix<T> &MT); //деление
-	//ввод-вывод
+	TMatrix& operator=(const TMatrix &Mt);        // ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГҐ
+	//Г Г°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГЁГҐ Г®ГЇГҐГ°Г Г¶ГЁГЁ
+	TMatrix operator+(const TMatrix &Mt);         // Г±Г«Г®Г¦ГҐГ­ГЁГҐ
+	TMatrix operator-(const TMatrix &Mt);         // ГўГ»Г·ГЁГІГ Г­ГЁГҐ
+	TMatrix<T> operator*(const TMatrix<T> &Mt);    // ГіГ¬Г­Г®Г¦ГҐГ­ГЁГҐ
+	TMatrix<T> operator/(const TMatrix<T> &MT); //Г¤ГҐГ«ГҐГ­ГЁГҐ
+	//ГўГўГ®Г¤-ГўГ»ГўГ®Г¤
 	template <class ValType2>
 	friend istream& operator>>(istream &in, TMatrix<ValType2> &Mt);
 	template <class ValType2>
