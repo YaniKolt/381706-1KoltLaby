@@ -1,0 +1,16 @@
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/CMakeFiles/ALL_BUILD.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/gtest/CMakeFiles/gtest.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/ExceptionLib/CMakeFiles/ExceptionLib.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Vector/CMakeFiles/Vector.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/VectorLib/CMakeFiles/VectorLib.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/VectorTest/CMakeFiles/VectorTest.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Matrix/CMakeFiles/Matrix.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/MatrixLib/CMakeFiles/Matrixlib.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/MatrixTest/CMakeFiles/MatrixTest.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Stack/CMakeFiles/Stack.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/StackLib/CMakeFiles/StackLib.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/StackTest/CMakeFiles/StackTest.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/Queue/CMakeFiles/Queue.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/QueueLib/CMakeFiles/QueueLib.dir
+C:/Users/Яна/Desktop/чек/381706-1KoltLaby/QueueTest/CMakeFiles/QueueTest.dir

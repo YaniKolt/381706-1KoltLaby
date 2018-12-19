@@ -11,5 +11,7 @@ script:
  # - cd ./bin/
   - ./VectorTest/VectorTest
   - ./MatrixTest/MatrixTest
+  - ./StackTest/StackTest
+  - ./QueueTest/QueueTest
 notifications:
   email: false
