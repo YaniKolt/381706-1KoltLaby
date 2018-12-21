@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iomanip>
 #include "Vector.h"
 
@@ -6,22 +6,22 @@ template <class T>
 class TMatrix : public TVector<TVector<T> >
 {
 public:
-	//конструкторы
+	//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 	TMatrix(int l = 10);
 	TMatrix(const TMatrix & mtr);
 	TMatrix(const TVector<TVector<T> > & mtr);
 	virtual ~TMatrix();
-	//булевые
-	bool operator==(const TMatrix & mtr) const;      // булевый оператор равно
-	bool operator!=(const TMatrix & mtr) const;      // булевый оператор не равно
+	//Р±СѓР»РµРІС‹Рµ
+	bool operator==(const TMatrix & mtr) const;      // Р±СѓР»РµРІС‹Р№ РѕРїРµСЂР°С‚РѕСЂ СЂР°РІРЅРѕ
+	bool operator!=(const TMatrix & mtr) const;      // Р±СѓР»РµРІС‹Р№ РѕРїРµСЂР°С‚РѕСЂ РЅРµ СЂР°РІРЅРѕ
 
-	TMatrix& operator=(const TMatrix & mtr);        // присваивание
-	//арифметические операции
-	TMatrix operator+(const TMatrix & mtr);         // сложение
-	TMatrix operator-(const TMatrix & mtr);         // вычитание
-	TMatrix<T> operator*(const TMatrix<T> & mtr);    // умножение
-	TMatrix<T> operator/(const TMatrix<T> &mtr); //деление
-	//ввод-вывод
+	TMatrix& operator=(const TMatrix & mtr);        // РїСЂРёСЃРІР°РёРІР°РЅРёРµ
+	//Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРёРµ РѕРїРµСЂР°С†РёРё
+	TMatrix operator+(const TMatrix & mtr);         // СЃР»РѕР¶РµРЅРёРµ
+	TMatrix operator-(const TMatrix & mtr);         // РІС‹С‡РёС‚Р°РЅРёРµ
+	TMatrix<T> operator*(const TMatrix<T> & mtr);    // СѓРјРЅРѕР¶РµРЅРёРµ
+	TMatrix<T> operator/(const TMatrix<T> &mtr); //РґРµР»РµРЅРёРµ
+	//РІРІРѕРґ-РІС‹РІРѕРґ
 	template <class ValType2>
 	friend istream& operator>>(istream &in, TMatrix<ValType2> & mtr);
 	template <class ValType2>

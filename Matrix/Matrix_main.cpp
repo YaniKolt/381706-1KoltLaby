@@ -59,6 +59,15 @@ int main()
     exp.Print();
   }
 
+	try {
+		c = a / b;
+		cout << "A / B = \n" << c << endl;
+	}
+	catch (MyException exp)
+	{
+		exp.Print();
+	}
+
   cout << "\n\nПользовательский ввод / output streams:\n";
   TMatrix <int> mt(3);
   cin >> mt;

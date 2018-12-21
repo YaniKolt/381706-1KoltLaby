@@ -1,40 +1,40 @@
-#pragma once
+п»ї#pragma once
 #include "ExceptionLib.h"
 
 template <class T>
 class TVector
 {
 protected:
-  T *vector;     //указатель на вектор 
-  int leng;       //длина вектора
+  T *vector;     //СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РІРµРєС‚РѕСЂ 
+  int leng;       //РґР»РёРЅР° РІРµРєС‚РѕСЂР°
 
 public:
 
-	//конструкторы
+	//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
   TVector(int l = 0);
   TVector(const TVector &a);                
   virtual ~TVector();
 
-  int GetLeng() const; //получить длину вектора
-  virtual T& operator[](int m);           //доступ к определенному элементу в позиции m
+  int GetLeng() const; //РїРѕР»СѓС‡РёС‚СЊ РґР»РёРЅСѓ РІРµРєС‚РѕСЂР°
+  virtual T& operator[](int m);           //РґРѕСЃС‚СѓРї Рє РѕРїСЂРµРґРµР»РµРЅРЅРѕРјСѓ СЌР»РµРјРµРЅС‚Сѓ РІ РїРѕР·РёС†РёРё m
 
-  //булевые операторы
-  bool operator==(const TVector &a) const;  // булевый оператор равно
-  bool operator!=(const TVector &a) const;  // булевый оператор не равно
+  //Р±СѓР»РµРІС‹Рµ РѕРїРµСЂР°С‚РѕСЂС‹
+  bool operator==(const TVector &a) const;  // Р±СѓР»РµРІС‹Р№ РѕРїРµСЂР°С‚РѕСЂ СЂР°РІРЅРѕ
+  bool operator!=(const TVector &a) const;  // Р±СѓР»РµРІС‹Р№ РѕРїРµСЂР°С‚РѕСЂ РЅРµ СЂР°РІРЅРѕ
  
-	virtual TVector& operator=(const TVector &a); // присвоить
+	virtual TVector& operator=(const TVector &a); // РїСЂРёСЃРІРѕРёС‚СЊ
 
-	//арифметические операции с числом(скаляром)
-  TVector operator+(const T &n);   //сложение с числом
-  TVector operator-(const T &n);   //вычитание числа
-  TVector operator*(const T &n);   //умножение на число
+	//Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРёРµ РѕРїРµСЂР°С†РёРё СЃ С‡РёСЃР»РѕРј(СЃРєР°Р»СЏСЂРѕРј)
+  TVector operator+(const T &n);   //СЃР»РѕР¶РµРЅРёРµ СЃ С‡РёСЃР»РѕРј
+  TVector operator-(const T &n);   //РІС‹С‡РёС‚Р°РЅРёРµ С‡РёСЃР»Р°
+  TVector operator*(const T &n);   //СѓРјРЅРѕР¶РµРЅРёРµ РЅР° С‡РёСЃР»Рѕ
 
-	//арифметические операции
-  TVector operator+(const TVector &a);     //сложение
-  TVector operator-(const TVector &a);     //вычитание
-  T operator*(const TVector &A);     //скалярное произведение
+	//Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРёРµ РѕРїРµСЂР°С†РёРё
+  TVector operator+(const TVector &a);     //СЃР»РѕР¶РµРЅРёРµ
+  TVector operator-(const TVector &a);     //РІС‹С‡РёС‚Р°РЅРёРµ
+  T operator*(const TVector &A);     //СЃРєР°Р»СЏСЂРЅРѕРµ РїСЂРѕРёР·РІРµРґРµРЅРёРµ
 	
-  //ввод-вывод
+  //РІРІРѕРґ-РІС‹РІРѕРґ
   template <class ValType1>
   friend istream& operator>>(istream &in, TVector<ValType1>& a);
   template <class ValType1>
