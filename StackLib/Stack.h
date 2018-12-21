@@ -12,9 +12,15 @@ protected:
 	int top;//Верх
 public:
 	TStack(int L=0);
-	TStack(TStack &A);
+	TStack(TStack &a);
 	~TStack();
-	void Put(T A);//Положить
+	int GetLength();// Получить длину стека
+	void PrintStack(); //Вывод стека на экран
+	TStack& operator=(const TStack<T>& st); //Присваивание стека
+	int operator==(const TStack<T>& st) const; //Проверка на равенство
+	int operator!=(const TStack<T>& st) const; // Проверка на неравенство
+
+	void Put(T a);//Положить
 	T Get();//Взять
 	bool IsFull();//Проверка на полноту
 	bool IsEmpty();//Проверка на пустоту
@@ -22,32 +28,32 @@ public:
 
 //конструкторы
 template <class T>
-TStack<T>::TStack(int L){
-	if (L < 0)
-		throw MyException("error leng");
+TStack<T>::TStack(int l){
+	if (l < 0)
+		throw MyException("Error leng");
 	else 
-		if (L == 0){
+		if (l == 0){
 		leng = 0;
 		elem = 0;
 		top = 0;
 	}
 	else{
-		elem = new T[L];
-		leng = L;
+		elem = new T[l];
+		leng = l;
 		top = 0;
 	}
 }
 
 template <class T>
-TStack<T>::TStack(TStack<T> &A){
-	leng = A.leng;
-	top = A.top;
+TStack<T>::TStack(TStack<T> &a){
+	leng = a.leng;
+	top = a.top;
 	if (leng == 0)
 		elem = 0;
 	else{
 		elem = new T[leng];
 		for (int i = 0; i < leng; i++)
-			elem[i] = A.elem[i];
+			elem[i] = a.elem[i];
 	}
 }
 //деструктор
@@ -62,11 +68,11 @@ TStack<T> :: ~TStack(){
 
 //положить
 template <class T>
-void TStack<T>::Put(T A){
+void TStack<T>::Put(T a){
 	if (IsFull())
 		throw MyException("Stack is full");
 	else{
-		elem[top] = A;
+		elem[top] = a;
 		top++;
 	}
 }
@@ -93,4 +99,55 @@ bool TStack<T>::IsEmpty(){
 template <class T>
 bool TStack<T>::IsFull(){
 	return (top >= leng);
+}
+
+
+template <class T>
+int TStack<T>::GetLength()
+{
+	return leng;
+}
+
+template <class T>
+void TStack<T>::PrintStack()
+{
+	for (int i = top - 1; i >= 0; i--)
+		cout << " " << elem[i];
+}
+
+
+template <class T>
+TStack<T>& TStack<T>::operator=(const TStack<T>& a)
+{
+	if (this != &a)
+	{
+		delete[] elem;
+		top = a.top;
+		leng = a.leng;
+		elem = new T[leng];
+		for (int i = 0; i < leng; i++)
+			elem[i] = a.elem[i];
+	}
+	return *this;
+}
+
+
+template <class T>
+int TStack<T>::operator==(const TStack<T>& a) const
+{
+	if (top != a.top)
+		return 0;
+	if (leng != a.leng)
+		return 0;
+	for (int i = 0; i < top; i++)
+		if (elem[i] != a.elem[i])
+			return 0;
+	return 1;
+}
+
+
+template <class T>
+int TStack<T>::operator!=(const TStack<T>& a) const
+{
+	return !(*this == a);
 }

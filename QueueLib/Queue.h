@@ -11,9 +11,9 @@ protected:
 	int start;//Начало очереди
 	int count;//Количество элементов
 public:
-	TQueue(int L);
-	TQueue(TQueue <T> &A);
-	void Put(T A);//Положить в конец очереди
+	TQueue(int l);
+	TQueue(TQueue <T> &a);
+	void Put(T a);//Положить в конец очереди
 	T Get();//Взять первый элемент
 	bool IsFull();//Проверка на полноту
 	bool IsEmpty();//Проверка на пустоту
@@ -21,11 +21,11 @@ public:
 
 
 template <class T>
-TQueue<T>::TQueue(int L) : TStack<T>(L) {
-	if (L < 0)
+TQueue<T>::TQueue(int l) : TStack<T>(l) {
+	if (l < 0)
 		throw MyException("Error lengt");
 	else
-		if (L == 0)
+		if (l == 0)
 		{
 			start = 0;
 			this->leng = 0;
@@ -35,8 +35,8 @@ TQueue<T>::TQueue(int L) : TStack<T>(L) {
 		}
 		else
 		{
-			this->leng = L;
-			this->elem = new T[L];
+			this->leng = l;
+			this->elem = new T[l];
 			this->top = 0;
 			start = 0;
 			count = 0;
@@ -44,17 +44,17 @@ TQueue<T>::TQueue(int L) : TStack<T>(L) {
 }
 
 template <class T>
-TQueue<T>::TQueue(TQueue<T> &A) : TStack<T>(A) {
-	start = A.start; 
-	count = A.count;
+TQueue<T>::TQueue(TQueue<T> &a) : TStack<T>(a) {
+	start = a.start; 
+	count = a.count;
 }
 
 template <class T>
-void TQueue<T>::Put(T A){
+void TQueue<T>::Put(T a){
 	if (IsFull())
 		throw "Queue is full";
 	else {
-		TStack<T>::elem[start] = A;
+		TStack<T>::elem[start] = a;
 		start = (start + 1) % TStack<T>::leng;
 		count++;
 	}
