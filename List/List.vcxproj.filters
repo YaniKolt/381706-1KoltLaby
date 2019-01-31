@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Яна\Desktop\аисд\381706_Maximova_All_Lab\List\List_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Яна\Desktop\аисд\381706_Maximova_All_Lab\List\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FDE39834-1DB3-34AA-9E73-54904D3F7F7A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
