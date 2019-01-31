@@ -46,9 +46,9 @@ int main()
     list.Print();
   }
 
-  catch (MyException exp)
+  catch (MyException exc)
   {
-    exp.Print();
+    exc.Print();
   }
 
   return 0;
