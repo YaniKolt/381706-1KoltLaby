@@ -24,6 +24,8 @@ public:
 	T Get();//Взять
 	bool IsFull();//Проверка на полноту
 	bool IsEmpty();//Проверка на пустоту
+
+	T Top();
 };
 
 //конструкторы
@@ -150,4 +152,15 @@ template <class T>
 int TStack<T>::operator!=(const TStack<T>& a) const
 {
 	return !(*this == a);
+}
+
+template<class T>
+T TStack<T>::Top()
+{
+	if (IsEmpty())
+		throw MyException("Stack is empty");
+	else
+	{
+		return elem[top - 1];
+	}
 }

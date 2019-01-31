@@ -11,12 +11,13 @@ protected:
 	int start;//Начало очереди
 	int count;//Количество элементов
 public:
-	TQueue(int l);
+	TQueue(int l = 0);
 	TQueue(TQueue <T> &a);
 	void Put(T a);//Положить в конец очереди
 	T Get();//Взять первый элемент
 	bool IsFull();//Проверка на полноту
 	bool IsEmpty();//Проверка на пустоту
+	void Print();
 };
 
 
@@ -81,4 +82,11 @@ bool TQueue<T>::IsFull() {
 template <class T>
 bool TQueue<T>::IsEmpty() {
 	return (count == 0);
+}
+
+template<class T>
+void TQueue<T>::Print()
+{
+	for (int i = start; i < TStack<T>::top; i = (i + 1) % TStack<T>::leng)
+		cout << TStack<T>::elem[i];
 }
