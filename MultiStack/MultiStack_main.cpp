@@ -51,10 +51,10 @@ int main()
     mst.PrintMStack();
 
   }
-
-  catch (MyException exс)
+	
+  catch (MyException exc)
   {
-    exс.Print();
+    exc.Print();
   }
 
   return 0;
