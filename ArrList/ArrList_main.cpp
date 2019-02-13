@@ -1,4 +1,4 @@
-#include "ArrList.h"
+ï»¿#include "ArrList.h"
 
 int main()
 {
@@ -6,7 +6,7 @@ int main()
 	{
 		setlocale(LC_ALL, "Russian");
 
-		cout << "Ââåäèòå ðàçìåð ñïèñêà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÑÐ¿Ð¸ÑÐºÐ°: ";
 		int l;
 		cin >> l;
 		cout << endl;
@@ -14,30 +14,30 @@ int main()
 		int i;
 		for (i = 1; i <= l / 3; i++)
 		{
-			cout << "Ïîëîæèòü â êîíåö:" << i << endl;
+			cout << "ÐŸÐ¾Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð² ÐºÐ¾Ð½ÐµÑ†:" << i << endl;
 			aList.PutEnd(i);
 		}
 		for (i; i <= 2 * (l / 3); i++)
 		{
-			cout << "Ïîëîæèòü â íà÷àëî: " << i << endl;
+			cout << "ÐŸÐ¾Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð² Ð½Ð°Ñ‡Ð°Ð»Ð¾: " << i << endl;
 			aList.PutStart(i);
 		}
 		for (i; i <= l; i++)
 		{
-			cout << "Ïîëîæèòü â êîíåö:" << i << endl;
+			cout << "ÐŸÐ¾Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð² ÐºÐ¾Ð½ÐµÑ†:" << i << endl;
 			aList.PutEnd(i);
 		}
-		cout << "\n\nÑîçäàòü ñïèñîê" << endl;
+		cout << "\n\nÐ¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº" << endl;
 		aList.Print();
 		cout << "\n\n";
 
 
 		for (i = 1; i <= l / 3; i++)
-			cout << "Âçÿòü èç êîíöà:" << aList.GetEnd() << endl;
+			cout << "Ð’Ð·ÑÑ‚ÑŒ Ð¸Ð· ÐºÐ¾Ð½Ñ†Ð°:" << aList.GetEnd() << endl;
 		for (i; i <= 2 * (l / 3); i++)
-			cout << "Âçÿòü èç íà÷àëà: " << aList.GetStart() << endl;
+			cout << "Ð’Ð·ÑÑ‚ÑŒ Ð¸Ð· Ð½Ð°Ñ‡Ð°Ð»Ð°: " << aList.GetStart() << endl;
 		for (i; i <= l; i++)
-			cout << "Âçÿòü èç êîíöà:" << aList.GetEnd() << endl;
+			cout << "Ð’Ð·ÑÑ‚ÑŒ Ð¸Ð· ÐºÐ¾Ð½Ñ†Ð°:" << aList.GetEnd() << endl;
 	}
 	catch (MyException exc)
 	{

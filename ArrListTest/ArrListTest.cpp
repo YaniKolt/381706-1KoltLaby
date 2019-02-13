@@ -1,4 +1,4 @@
-#include <gtest.h>
+﻿#include <gtest.h>
 #include "ArrList.h"
 
 TEST(ArrList, can_create_list_with_not_identified_size)
