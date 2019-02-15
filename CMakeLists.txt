@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8) #Проверка версии CMake.
+﻿cmake_minimum_required(VERSION 2.8) #Проверка версии CMake.
 
 set(PROJECT_NAME 381706-1KoltLaby) #Создаем обычную локальную переменную с именем проекта
 project(${PROJECT_NAME}) # Название проекта
@@ -28,6 +28,18 @@ set(ArrListTest ArrListTest)
 set(List List)
 set(ListLib ListLib)
 set(ListTest ListTest)
+
+set(Polynomial Polynomial)
+set(PolynomialLib PolynomialLib)
+set(PolynomialTest PolynomialTest)
+
+set(StackList StackList)
+set(StackListLib StackListLib)
+set(StackListTest StackListTest)
+
+set(Polish Polish)
+set(PolishLib PolishLib)
+set(PolishTest PolishTest)
 
 set(MultiStack MultiStack)
 set(MultiStackLib MultiStackLib)
@@ -79,6 +91,21 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/MultiStackLib)
 add_subdirectory(MultiStack)
 add_subdirectory(MultiStackLib)
 add_subdirectory(MultiStackTest)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/PolynomialLib)
+add_subdirectory(Polynomial)
+add_subdirectory(PolynomialLib)
+add_subdirectory(PolynomialTest)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/StackListLib)
+add_subdirectory(StackList)
+add_subdirectory(StackListLib)
+add_subdirectory(StackListTest)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/PolishLib)
+add_subdirectory(Polish)
+add_subdirectory(PolishLib)
+add_subdirectory(PolishTest)
 #target_link_libraries(${PROJECT_NAME} ${MyLib1}) #Подключаем к проекту с именем ${PROJECT_NAME} библиотеку с именем ${MyLib1}
 
 

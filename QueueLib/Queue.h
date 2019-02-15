@@ -18,6 +18,8 @@ public:
 	bool IsFull();//Проверка на полноту
 	bool IsEmpty();//Проверка на пустоту
 	void Print();
+
+	T Top();
 };
 
 
@@ -51,26 +53,35 @@ TQueue<T>::TQueue(TQueue<T> &a) : TStack<T>(a) {
 }
 
 template <class T>
-void TQueue<T>::Put(T a){
+void TQueue<T>::Put(T el)
+{
 	if (IsFull())
-		throw "Queue is full";
-	else {
-		TStack<T>::elem[start] = a;
-		start = (start + 1) % TStack<T>::leng;
+		throw MyException("Queue is Full");
+	else
+	{
+		TStack<T>::Put(el);
+		TStack<T>::top = TStack<T>::top % TStack<T>::leng;
 		count++;
 	}
 }
 
+template<class T>
+inline T TQueue<T>::Top()
+{
+	return TStack<T>::elem[start];
+}
+
 template <class T>
-T TQueue<T>::Get() {
+T TQueue<T>::Get()
+{
 	if (IsEmpty())
-		throw "Queue is empty";
-	else {
-		T temp = TStack<T>::elem[TStack<T>::top];
-		TStack<T>::top = (TStack<T>::top + 1) % TStack<T>::leng;
+		throw MyException("Stack is Empty");
+	else
+	{
+		T tmp = TStack<T>::elem[start];
+		start = (start + 1) % TStack<T>::leng;
 		count--;
-		
-		return temp;
+		return tmp;
 	}
 }
 

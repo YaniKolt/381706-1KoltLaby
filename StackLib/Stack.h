@@ -13,7 +13,7 @@ protected:
 public:
 	TStack(int L=0);
 	TStack(TStack &a);
-	~TStack();
+	virtual ~TStack();
 	int GetLength();// Получить длину стека
 	void PrintStack(); //Вывод стека на экран
 	TStack& operator=(const TStack<T>& st); //Присваивание стека
