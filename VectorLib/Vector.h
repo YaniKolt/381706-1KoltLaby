@@ -1,51 +1,51 @@
-#pragma once
+п»ї#pragma once
 #include "ExceptionLib.h"
 
 template <class T>
 class TVector
 {
 protected:
-  T *vector;     //указатель на вектор 
-  int leng;       //длина вектора
+  T *vector;     //СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РІРµРєС‚РѕСЂ 
+  int leng;       //РґР»РёРЅР° РІРµРєС‚РѕСЂР°
 
 public:
 
-	//конструкторы
+	//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
   TVector(int l = 0);
-  TVector(const TVector &A);                
+  TVector(const TVector &a);                
   virtual ~TVector();
 
-  int GetLeng() const; //получить длину вектора
-  virtual T& operator[](int m);           //доступ к определенному элементу в позиции m
+  int GetLeng() const; //РїРѕР»СѓС‡РёС‚СЊ РґР»РёРЅСѓ РІРµРєС‚РѕСЂР°
+  virtual T& operator[](int m);           //РґРѕСЃС‚СѓРї Рє РѕРїСЂРµРґРµР»РµРЅРЅРѕРјСѓ СЌР»РµРјРµРЅС‚Сѓ РІ РїРѕР·РёС†РёРё m
 
-  //булевые операторы
-  bool operator==(const TVector &A) const;  // булевый оператор равно
-  bool operator!=(const TVector &A) const;  // булевый оператор не равно
+  //Р±СѓР»РµРІС‹Рµ РѕРїРµСЂР°С‚РѕСЂС‹
+  bool operator==(const TVector &a) const;  // Р±СѓР»РµРІС‹Р№ РѕРїРµСЂР°С‚РѕСЂ СЂР°РІРЅРѕ
+  bool operator!=(const TVector &a) const;  // Р±СѓР»РµРІС‹Р№ РѕРїРµСЂР°С‚РѕСЂ РЅРµ СЂР°РІРЅРѕ
  
-	virtual TVector& operator=(const TVector &A); // присвоить
+	virtual TVector& operator=(const TVector &a); // РїСЂРёСЃРІРѕРёС‚СЊ
 
-	//арифметические операции с числом(скаляром)
-  TVector operator+(const T &n);   //сложение с числом
-  TVector operator-(const T &n);   //вычитание числа
-  TVector operator*(const T &n);   //умножение на число
+	//Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРёРµ РѕРїРµСЂР°С†РёРё СЃ С‡РёСЃР»РѕРј(СЃРєР°Р»СЏСЂРѕРј)
+  TVector operator+(const T &n);   //СЃР»РѕР¶РµРЅРёРµ СЃ С‡РёСЃР»РѕРј
+  TVector operator-(const T &n);   //РІС‹С‡РёС‚Р°РЅРёРµ С‡РёСЃР»Р°
+  TVector operator*(const T &n);   //СѓРјРЅРѕР¶РµРЅРёРµ РЅР° С‡РёСЃР»Рѕ
 
-	//арифметические операции
-  TVector operator+(const TVector &A);     //сложение
-  TVector operator-(const TVector &A);     //вычитание
-  T operator*(const TVector &A);     //скалярное произведение
+	//Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРёРµ РѕРїРµСЂР°С†РёРё
+  TVector operator+(const TVector &a);     //СЃР»РѕР¶РµРЅРёРµ
+  TVector operator-(const TVector &a);     //РІС‹С‡РёС‚Р°РЅРёРµ
+  T operator*(const TVector &A);     //СЃРєР°Р»СЏСЂРЅРѕРµ РїСЂРѕРёР·РІРµРґРµРЅРёРµ
 	
-  //ввод-вывод
+  //РІРІРѕРґ-РІС‹РІРѕРґ
   template <class ValType1>
-  friend istream& operator>>(istream &in, TVector<ValType1>& A);
+  friend istream& operator>>(istream &in, TVector<ValType1>& a);
   template <class ValType1>
-  friend ostream& operator<<(ostream &out, const TVector<ValType1>& A);
+  friend ostream& operator<<(ostream &out, const TVector<ValType1>& a);
 }; 
 
 template <class T>
 TVector<T>::TVector(int l)
 {
 	if (l < 0)
-		throw MyException("error leng");
+		throw MyException("Error leng");
   else
     if (l == 0) 
     {
@@ -62,16 +62,16 @@ TVector<T>::TVector(int l)
 } 
 
 template <class T> 
-TVector<T>::TVector(const TVector<T> &A) 
+TVector<T>::TVector(const TVector<T> &a) 
 {
-  leng = A.leng;
+  leng = a.leng;
   if (leng == 0)
     vector = NULL;
   else 
   {
     vector = new T[leng];
     for (int i = 0; i < leng; i++)
-      vector[i] = A.vector[i];
+      vector[i] = a.vector[i];
   }
 } 
 template<class T>
@@ -97,17 +97,17 @@ T& TVector<T>::operator[](int m)
 	if (m >= 0 && m < leng)
 		return vector[m];
 	else
-		throw MyException("error position");
+		throw MyException("Error position");
 } 
 
 template <class T>
-bool TVector<T>::operator==(const TVector &A) const
+bool TVector<T>::operator==(const TVector &a) const
 {
-	if (leng != A.leng)
+	if (leng != a.leng)
 		return 0;
 	else
 		for (int i = 0; i < leng; i++)
-			if (vector[i] != A.vector[i])
+			if (vector[i] != a.vector[i])
 			{
         return 0;
 			}
@@ -115,21 +115,21 @@ bool TVector<T>::operator==(const TVector &A) const
 } 
 
 template <class T> 
-bool TVector<T>::operator!=(const TVector &A) const
+bool TVector<T>::operator!=(const TVector &a) const
 {
-  return !(*this == A);
+  return !(*this == a);
 }
 
 template <class T> 
-TVector<T>& TVector<T>::operator=(const TVector &A)
+TVector<T>& TVector<T>::operator=(const TVector &a)
 {
-	if (this != &A)
+	if (this != &a)
 	{
 		delete[] vector;
-		leng = A.leng;
+		leng = a.leng;
 		vector = new T[leng];
 		for (int i = 0; i < leng; i++)
-			vector[i] = A.vector[i];
+			vector[i] = a.vector[i];
 	}
 	return *this;
 } 
@@ -162,51 +162,51 @@ TVector<T> TVector<T>::operator*(const T &n)
 } 
 
 template <class T>
-TVector<T> TVector<T>::operator+(const TVector<T> &A)
+TVector<T> TVector<T>::operator+(const TVector<T> &a)
 {
-  if (leng != A.leng)
-    throw MyException("error leng operand");
+  if (leng != a.leng)
+    throw MyException("Error leng operand");
   TVector<T> rez(*this);
   for (int i = 0; i < leng; i++)
-    rez[i] = (*this)[i] + A.vector[i];
+    rez[i] = (*this)[i] + a.vector[i];
   return rez;
 } 
 
 template <class T>
-TVector<T> TVector<T>::operator-(const TVector<T> &A)
+TVector<T> TVector<T>::operator-(const TVector<T> &a)
 {
-  if (leng != A.leng)
-    throw MyException("error leng operand");
+  if (leng != a.leng)
+    throw MyException("Error leng operand");
   TVector<T> rez(*this);
   for (int i = 0; i < leng; i++)
-    rez[i] = (*this)[i] - A.vector[i];
+    rez[i] = (*this)[i] - a.vector[i];
   return rez;
 }
 
 template <class T> 
-T TVector<T>::operator*(const TVector<T> &A)
+T TVector<T>::operator*(const TVector<T> &a)
 {
-  if (leng != A.leng)
-    throw MyException("error leng operand");
+  if (leng != a.leng)
+    throw MyException("Error leng operand");
   int temp = 0;
   for (int i = 0; i < leng; i++)
-    temp += vector[i] * A.vector[i];
+    temp += vector[i] * a.vector[i];
   return temp;
 } 
 
 template <class T>
-istream& operator>>(istream &in, TVector<T> &A)
+istream& operator>>(istream &in, TVector<T> &a)
 {
-	for (int i = 0; i < A.leng; i++)
-		in >> A.vector[i];
+	for (int i = 0; i < a.leng; i++)
+		in >> a.vector[i];
 	return in;
 }
 
 template <class T>
-ostream& operator<<(ostream &out, const TVector<T> &A)
+ostream& operator<<(ostream &out, const TVector<T> &a)
 {
-	for (int i = 0; i < A.leng; i++)
-		out << A.vector[i] << ' ';
+	for (int i = 0; i < a.leng; i++)
+		out << a.vector[i] << '\t';
 	return out;
 }
 

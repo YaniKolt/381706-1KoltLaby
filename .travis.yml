@@ -11,5 +11,13 @@ script:
  # - cd ./bin/
   - ./VectorTest/VectorTest
   - ./MatrixTest/MatrixTest
+  - ./StackTest/StackTest
+  - ./QueueTest/QueueTest
+  - ./ArrListTest/ArrListTest
+  - ./ListTest/ListTest
+  - ./MultiStackTest/MultiStackTest
+  - ./PolynomialTest/PolynomialTest
+  - ./StackListTest/StackListTest
+  - ./PolishTest/PolishTest
 notifications:
   email: false
