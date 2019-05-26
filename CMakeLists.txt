@@ -45,6 +45,20 @@ set(MultiStack MultiStack)
 set(MultiStackLib MultiStackLib)
 set(MultiStackTest MultiStackTest)
 
+set(ViewingTable ViewingTable)
+set(ViewingTableLib ViewingTableLib)
+set(ViewingTableTest ViewingTableTest)
+
+set(SortTable SortTable)
+set(SortTableLib SortTableLib)
+set(SortTableTest SortTableTest)
+
+set (PlexLib PlexLib)
+set (Plex Plex)
+set (PlexTest PlexTest)
+
+
+
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE) #Создается переменная CMAKE_CONFIGURATION_TYPES со значением "Debug;Release" и меткой/разделом Configs, переменная сохраниется в специальном файле доступном из всех файлов,
 if(NOT CMAKE_BUILD_TYPE) # проверка имеющихся у компилятора вариантов сборки
   set(CMAKE_BUILD_TYPE Release) #Если нет то устанавливаем Release
@@ -106,6 +120,21 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/PolishLib)
 add_subdirectory(Polish)
 add_subdirectory(PolishLib)
 add_subdirectory(PolishTest)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ViewingTableLib)
+add_subdirectory(ViewingTable)
+add_subdirectory(ViewingTableLib)
+add_subdirectory(ViewingTableTest)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/SortTableLib)
+add_subdirectory(SortTable)
+add_subdirectory(SortTableLib)
+add_subdirectory(SortTableTest)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/PlexLib)
+add_subdirectory(PlexLib)
+add_subdirectory(Plex)
+add_subdirectory(PlexTest)
 #target_link_libraries(${PROJECT_NAME} ${MyLib1}) #Подключаем к проекту с именем ${PROJECT_NAME} библиотеку с именем ${MyLib1}
 
 

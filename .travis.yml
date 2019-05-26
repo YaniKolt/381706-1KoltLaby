@@ -19,5 +19,8 @@ script:
   - ./PolynomialTest/PolynomialTest
   - ./StackListTest/StackListTest
   - ./PolishTest/PolishTest
+  - ./ViewingTableTest/ViewingTableTest
+  - ./SortTableTest/SortTableTest
+  - ./PlexTest/PlexTest
 notifications:
   email: false
